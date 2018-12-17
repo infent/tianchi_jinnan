@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>914</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SunShine_绿通</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>251</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>车牌号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="carid">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>车型</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="cartype">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="currentText">
+        <string>计货1</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>计货1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>计货2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>计货3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>计货4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>计货5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>一型货</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>二型货</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>三型货</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>四型货</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>五型货</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>一型车</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>二型车</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>三型车</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>四型车</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>五型车</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>特货1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>特货2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>特货3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>特货4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>特货5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>重量</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="weight">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>入口站</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="driveinplace">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>出口站</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="driveoutplace">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>货物</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="goods">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>轴数</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QSpinBox" name="axle">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="maximum">
+        <number>8</number>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>时间</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>金额</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="amount">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>00.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="time">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="calculateillegal">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>490</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>计算违规因子</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>50</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>车辆快照</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>100</y>
+      <width>511</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/carsnapshot/image/jihuo5.jpg);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="store2mysql">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>490</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>存储记录到数据库</string>
+    </property>
+   </widget>
+   <zorder>label_7</zorder>
+   <zorder>formLayoutWidget</zorder>
+   <zorder>calculateillegal</zorder>
+   <zorder>label_6</zorder>
+   <zorder>store2mysql</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>914</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <addaction name="read_associate"/>
+    <addaction name="read_help"/>
+    <addaction name="read_soft_info"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>我的</string>
+    </property>
+    <addaction name="user_info"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <addaction name="mysql_pattern"/>
+    <addaction name="separator"/>
+    <addaction name="mine_rules"/>
+    <addaction name="update_modelparams"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="mysqlquerymode">
+   <property name="text">
+    <string>进入数据库查询模式</string>
+   </property>
+  </action>
+  <action name="read_associate">
+   <property name="text">
+    <string>查看关联规则文档</string>
+   </property>
+  </action>
+  <action name="read_help">
+   <property name="text">
+    <string>查看帮助文档</string>
+   </property>
+  </action>
+  <action name="mysql_pattern">
+   <property name="text">
+    <string>进入数据库查询模式</string>
+   </property>
+  </action>
+  <action name="mine_rules">
+   <property name="text">
+    <string>关联规则挖掘</string>
+   </property>
+  </action>
+  <action name="update_modelparams">
+   <property name="text">
+    <string>模型参数更新</string>
+   </property>
+  </action>
+  <action name="user_info">
+   <property name="text">
+    <string>用户信息</string>
+   </property>
+  </action>
+  <action name="read_soft_info">
+   <property name="text">
+    <string>查看版本信息</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="lvtong.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>getinfo()</slot>
+  <slot>showresult()</slot>
+ </slots>
+</ui>
